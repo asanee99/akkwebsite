@@ -1,5 +1,7 @@
 <template>
-  <v-toolbar fixed dense flat scroll-toolbar-off-screen>
+  <v-toolbar 
+    
+    fixed dense flat scroll-off-screen lights-out>
     <v-toolbar-side-icon @click="$emit('sideNavToggle')" class="hidden-md-and-up"></v-toolbar-side-icon>
     <v-toolbar-title>U SBAY HOUSE</v-toolbar-title>
     <v-spacer></v-spacer>
@@ -21,6 +23,7 @@
       </v-btn>
     </v-toolbar-items>
   </v-toolbar>
+  
 </template>
 
 <script>
@@ -38,10 +41,7 @@
       }
     },
     methods: {
-      toggleNavbar() {
-        this.isActive ? this.isActive = false : this.isActive = true
-        this.isActive ? this.animationClass = 'slideOutUp faster' : this.animationClass = 'slideInDown faster'
-      }
+      
     }
   }
 

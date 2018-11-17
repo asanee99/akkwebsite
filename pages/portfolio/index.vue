@@ -1,8 +1,13 @@
 <template>
-    <div>
-        <h1 class="title is-1">Portfolio components</h1>
-        <JobList :jobs="loadedJobs" />
-    </div>
+   
+        <v-layout>
+            <v-flex>
+                <h1 class="title is-1">ผลงานของเรา</h1>
+                <JobList :jobs="loadedJobs" />
+            </v-flex>
+        </v-layout>
+       
+   
 </template>
 
 <script>

@@ -15,22 +15,21 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css'},
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'},
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Athiti'},
+      { rel: 'stylesheet', href: 'https://cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css'},
+      
     ]
   },
-
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#000000', height: '3px' },
 
   /*
   ** Global CSS
   */
   css: [
-    '~assets/styles/main.css'
+    '~assets/styles/main.css',
+    /* '~assets/css/app.styl' */
     /* {
       src: join(__dirname, 'assets/css/app.styl'),
       lang: 'styl'
@@ -41,7 +40,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~plugins/vuetify.js'
+    '~plugins/fonts.js'
   ],
 
   transition: {
@@ -55,9 +54,17 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    //'@nuxtjs/bulma'
+    '@nuxtjs/vuetify'
     
   ],
+
+  vuetify: {
+    theme: {
+     
+  
+    }
+  },
+
   /*
   ** Axios module configuration
   */

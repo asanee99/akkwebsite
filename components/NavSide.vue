@@ -13,15 +13,13 @@
       <v-divider></v-divider>
       <v-list-tile 
           v-for="link in navdata" 
-          :key="link.title">
+          :key="link.title" nux :to="link.navLink">
         <v-list-tile-action>
-          
+          <v-icon>{{ link.icon}}</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
           <v-list-tile-title>
-            <nuxt-link :to="link.navLink">
               <h3 class="">{{ link.title }}</h3>
-            </nuxt-link>
           </v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>

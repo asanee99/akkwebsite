@@ -12,7 +12,7 @@
 
         <v-card-title primary-title>
           <div>
-            <h2>{{ title }}</h2>
+            <div class="title mb-1 font-weight-medium text-truncate">{{ title }}</div>
             <div>{{ previewText }}<br>{{ previewSpace }}
             <br>{{ previewPrice }}</div>
           </div>

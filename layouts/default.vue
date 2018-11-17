@@ -1,11 +1,15 @@
 <template>
   <v-app>
     <v-navigation-drawer v-model="drawer" absolute temporary>
-      <app-nav-side :navdata="links"/>
+      <app-nav-side :navdata="links" />
     </v-navigation-drawer>
-    <app-header @sideNavToggle="drawer = !drawer" />
-    <nuxt />
-    <app-footer />
+
+      <app-header @sideNavToggle="drawer = !drawer" />
+
+    <v-container class="contents">
+      <nuxt />
+    </v-container>
+    <app-footer :icondata="icons"/>
   </v-app>
 </template>
 
@@ -15,6 +19,7 @@
   import NavSide from "@/components/NavSide"
 
   export default {
+
     components: {
       'app-footer': Footer,
       'app-header': Header,
@@ -22,20 +27,25 @@
     },
     data() {
       return {
-        
         drawer: null,
-
+        icons: [
+        'mdi-facebook',
+        'mdi-instagram'
+        ],
         links: [{
             title: 'Home',
-            navLink: '/'
+            navLink: '/',
+            icon: 'home'
           },
           {
             title: 'Portfolio',
-            navLink: '/portfolio'
+            navLink: '/portfolio',
+            icon: 'image'
           },
           {
             title: 'Contract',
-            navLink: '/contract'
+            navLink: '/contract',
+            icon: 'call'
           },
         ],
       }
@@ -45,5 +55,8 @@
 </script>
 
 <style>
+  .contents {
+    margin-top: 3rem;
+  }
 
 </style>

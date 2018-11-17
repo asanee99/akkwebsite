@@ -1,9 +1,7 @@
 <template>
-<div class="container mainSection">
-  
-    <h1 class="title is-1">Mutiple components</h1>
- 
-</div>
+  <v-layout>
+      <h1 class="title is-1">Mutiple components</h1>
+  </v-layout>
 </template>
 
 <script>
@@ -19,5 +17,5 @@ export default {
 </script>
 
 <style>
- 
+  
 </style>
