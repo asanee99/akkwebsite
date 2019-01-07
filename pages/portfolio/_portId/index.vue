@@ -2,7 +2,7 @@
   <v-container>
     <v-layout>
       <v-flex>
-        <v-card>
+     
           <v-container grid-list-sm fluid>
             <v-layout row wrap>
               <v-flex v-for="job in this.$route.query.jobLink" :key="job" xs12 sm4 md4 lg4 d-flex>
@@ -16,7 +16,7 @@
               </v-flex>
             </v-layout>
           </v-container>
-        </v-card>
+      
       </v-flex>
     </v-layout>
   </v-container>

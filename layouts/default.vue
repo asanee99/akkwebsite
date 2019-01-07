@@ -6,7 +6,7 @@
 
       <app-header @sideNavToggle="drawer = !drawer" />
 
-    <v-container class="contents">
+    <v-container class="contents" fluid>
       <nuxt />
     </v-container>
     <app-footer :icondata="icons"/>
@@ -19,7 +19,6 @@
   import NavSide from "@/components/NavSide"
 
   export default {
-
     components: {
       'app-footer': Footer,
       'app-header': Header,
@@ -56,7 +55,7 @@
 
 <style>
   .contents {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
   }
 
 </style>
