@@ -4,7 +4,7 @@
       <v-list>
         <v-list-tile>
           <v-list-tile-title class="title">
-            [ U SBAYICON ]
+           <div class="headline"><strong>AK&K</strong>CONSTRUCTION</div> 
           </v-list-tile-title>
         </v-list-tile>
       </v-list>
@@ -35,7 +35,10 @@
         default: false
       },
       navdata: {
-        type: Array,
+        type: Array
+      },
+      navlogo: {
+        type: String
       }
     }
   }

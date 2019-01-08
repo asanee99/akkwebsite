@@ -7,8 +7,8 @@
             </v-img>
           </v-flex>
           <v-flex xs12 sm6 md6 lg6 xl6 :class="paddingValue" >
-            <v-card-text class="text-xs-center" :class="displayTitleChange">อยู่สบาย เฮาส์</v-card-text>
-            <v-card-text class="text-xs-center" :class="displayTextChange">รับสร้างบ้าน <br> และงานก่อสร้างทั่วไป</v-card-text>
+            <v-card-text class="text-xs-center" :class="displayTitleChange"><strong>AK&K</strong> Construction</v-card-text>
+            <v-card-text class="text-xs-center" :class="displayTextChange">รับเหมาก่อสร้าง<br>ทุกชนิด ครบวงจร</v-card-text>
           </v-flex> 
       </v-layout>
     </v-container>
@@ -33,13 +33,20 @@
           <v-flex xs12 sm6 md6 lg6 xl6 :class="paddingValue">
             <v-card-text class="text-xs-center" :class="displayTitleChange">ผลงานของเรา</v-card-text>
             <v-card-actions>
-              <v-btn color="light-green headline" block>ชมผลงาน</v-btn>
+             
+                <v-btn color="light-green headline" block nuxt to="/portfolio">
+                ชมผลงาน
+                </v-btn>
+
+              
+              
             </v-card-actions>
             <v-card-text class="text-xs-center" :class="displayTextChange">สอบถามเพิ่มเติมติดต่อ 
               <br>
-              คุณอัสนี
+              <br>
+              <strong>คุณอัสนี</strong>
               <br> 
-              090-9849029</v-card-text>
+              092-350-5505</v-card-text>
           </v-flex> 
       </v-layout>
     </v-container>
@@ -55,7 +62,7 @@ export default {
   data() {
     return {
       picData: {
-        buildingCartoon: '/homepage/building-cartoon.png',
+        buildingCartoon: '/akkconstruction-logo-website-xl.png',
         advisor: '/homepage/cartoon-adviser.png',
         engineer: '/homepage/cartoon-engineer.png'
       },

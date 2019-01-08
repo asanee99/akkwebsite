@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-navigation-drawer v-model="drawer" absolute temporary>
-      <app-nav-side :navdata="links" />
+      <app-nav-side :navdata="links" :navlogo="logo" />
     </v-navigation-drawer>
 
       <app-header @sideNavToggle="drawer = !drawer" />
@@ -27,9 +27,15 @@
     data() {
       return {
         drawer: null,
-        icons: [
-        'mdi-facebook',
-        'mdi-instagram'
+        logo: '/akkconstruction-website-logo.png',
+        icons: [{
+          name: 'mdi-facebook',
+          link: 'https://www.facebook.com/akkconstruction'
+          },
+          {
+          name: 'mdi-instagram',
+          link: 'https://www.instagram.com/akk.construction/'
+          }
         ],
         links: [{
             title: 'Home',
@@ -43,7 +49,7 @@
           },
           {
             title: 'Contract',
-            navLink: '/contract',
+            navLink: '/contact',
             icon: 'call'
           },
         ],

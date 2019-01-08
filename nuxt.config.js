@@ -7,14 +7,14 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: "AK&K CONSTRUCTION รับเหมาก่อสร้าง สร้างตึกแถว สร้างโรงงาน สร้างห้องแถว ซ่อมแซ่ม บ้าน อาคาร",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/akkconstruction-fav-website.png' },
       { rel: 'stylesheet', href: 'https://cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css'},
       
     ]
@@ -40,7 +40,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~plugins/fonts.js'
+    '~plugins/fonts.js',
+    '~plugins/googleMaps.js'
   ],
 
   transition: {
@@ -77,6 +78,7 @@ module.exports = {
   */
   build: {
     vendor: ['vuetify'],
+    transpile: [/^vue2-google-maps($|\/)/],
     postcss: {
       preset: {
         features: {
@@ -88,7 +90,6 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      
     }
   }
 }

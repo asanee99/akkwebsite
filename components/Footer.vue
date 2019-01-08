@@ -8,8 +8,8 @@
       <!-- This contents Part -->
       <v-card-text>
       <!-- Icons Part -->
-        <v-btn v-for="icon in icondata" :key="icon" class="mx-3" light icon>
-          <v-icon size="24px">{{ icon }}</v-icon>
+        <v-btn v-for="icon in icondata" :key="icon" class="mx-3" light icon :href="icon.link">
+          <v-icon size="24px">{{ icon.name }}</v-icon>
         </v-btn>
       </v-card-text>
       <v-card-text class="green--text pt-0 footer-bg">
@@ -21,6 +21,7 @@
             <p><strong>AK&K Construction Co,.Ltd</strong></p>
             <p>271/20 ถ.สถคนธวิท ต.ตลาดกระทุ่มแบน</p>
             <p>อ.กระทุ่มแบน จ.สมุทรสาคร 74110</p>
+            <p>โทร. 092-350-5505</p>
           </div>
         </v-img>
         
@@ -59,6 +60,5 @@
     background-image: url('/footer/construct-outline-bg.png');
 
   }
-  
   
 </style>

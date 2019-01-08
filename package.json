@@ -1,7 +1,7 @@
 {
-  "name": "akkwebsite",
+  "name": "akkconstruction",
   "version": "1.0.0",
-  "description": "My kryptonian Nuxt.js project",
+  "description": "AKK website project",
   "author": "ASANEE",
   "private": true,
   "scripts": {
@@ -20,6 +20,7 @@
     "file-count": "^1.0.1",
     "fs": "0.0.1-security",
     "nuxt": "^2.0.0",
+    "vue2-google-maps": "^0.10.5",
     "vuetify": "^1.3.5"
   },
   "devDependencies": {
